@@ -11,13 +11,10 @@ pchats = []
 @USER.on_message(filters.text & filters.private & ~filters.me & ~filters.bot)
 async def pmPermit(client: USER, message: Message):
     if PMPERMIT == "ENABLE":
-        if PMSET:
-            chat_id = message.chat.id
-            if chat_id in pchats:
-                return
+        
             await USER.send_message(
                 message.chat.id,
-                "Hi there, This is a music assistant service .\n\n ❗️ Rules:\n   - No chatting allowed\n   - No spam allowed \n\n 👉 **SEND YOUR GROUP INVITE LINK OR USERNAME HERE @AWESOMESUPPORT IF USERBOT CAN'T JOIN YOUR GROUP.**\n\n ⚠️ Disclamer: If you need any help then join support group :- @AwesomeSupport\n    - Don't add this user to secret groups.\n   - Don't Share private info here\n\n",
+                "Hi My dev = radical",
             )
             return
 
