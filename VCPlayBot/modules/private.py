@@ -14,15 +14,20 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ Add to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "📚 Commands", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "💚 Donate", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}"),
+                    InlineKeyboardButton(
+                        "💚 Donate", url=f"https://t.me/{SUPPORT_GROUP}")
+                ],[
+                    InlineKeyboardButton(
+                        "Button", url=f"https://{SOURCE_CODE}")
                 ]
             ]
         ),
